@@ -272,6 +272,64 @@ app.get('/reservas', (req, res) => {
     res.json(reservas);
 });
 
+app.get('/buscar', (req, res) => {
+    const { q } = req.query; // Recibe el parámetro de búsqueda desde la query string
+
+    if (!q) {
+        return res.status(400).json({ message: 'Parámetro de búsqueda (q) es requerido' });
+    }
+
+    const result = searchAndHighlight(q);
+    res.json(result);
+});
+
+// Función de búsqueda y resaltado
+function searchAndHighlight(searchString) {
+    const lowerSearchString = searchString.toLowerCase();
+    const highlightSpan = `<span class="highlight">${searchString}</span>`;
+
+    // Función auxiliar para reemplazar coincidencias en un campo
+    function highlightField(field) {
+        if (field && typeof field === 'string') {
+            const regex = new RegExp(lowerSearchString, 'gi'); // 'gi' para insensible a mayúsculas y global
+            return field.replace(regex, highlightSpan);
+        }
+        return field;
+    }
+
+    // Crear copias de los objetos para no modificar el original
+    const paquetesResult = paquetes
+        .map(paquete => ({
+            ...paquete,
+            name: highlightField(paquete.name),
+            description: highlightField(paquete.description),
+            short_description: highlightField(paquete.short_description)
+        }))
+        .filter(paquete =>
+            (paquete.name && paquete.name.toLowerCase().includes(lowerSearchString)) ||
+            (paquete.description && paquete.description.toLowerCase().includes(lowerSearchString)) ||
+            (paquete.short_description && paquete.short_description.toLowerCase().includes(lowerSearchString))
+        );
+
+    const reservasResult = reservas
+        .map(reserva => ({
+            ...reserva,
+            name: highlightField(reserva.name),
+            description: highlightField(reserva.description),
+            short_description: highlightField(reserva.short_description)
+        }))
+        .filter(reserva =>
+            (reserva.name && reserva.name.toLowerCase().includes(lowerSearchString)) ||
+            (reserva.description && reserva.description.toLowerCase().includes(lowerSearchString)) ||
+            (reserva.short_description && reserva.short_description.toLowerCase().includes(lowerSearchString))
+        );
+
+    return {
+        paquetes: paquetesResult,
+        reservas: reservasResult
+    };
+}
+
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

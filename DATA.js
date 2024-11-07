@@ -275,16 +275,20 @@ module.exports = { paquetes: [
   {
     "name": "Aventura en Bariloche",
     "pasajeros": {
-      "adultos": 3,
+      "adultos": 2,
       "ninos": 2
     },
-    "precio": 10910,
+    "precio": 10220,
     "short_description": "<p>Actividades de aventura en Bariloche, explorando lagos y montañas.</p>",
     "description": "<p>Vive una experiencia inolvidable en Bariloche. Actividades de aventura como senderismo, kayak y recorridos en bicicleta por los lagos y montañas. Ideal para los amantes de la naturaleza y la adrenalina.</p>",
     "include": "<p>Traslados, alojamiento en hostería, excursiones guiadas en kayak y bicicleta, equipo de seguridad.</p>",
     "not_include": "<p>Propinas, almuerzos, cenas, seguro de viaje.</p>",
     "main_picture": "https://picsum.photos/800/600?random=5",
-    "id": "9024dc2ea4126bcc34e19a803783eb07",
+    "cliente": {
+      "name": "Federico Rosemberg",
+      "email": "federico@thefuzzyfish.com"
+    },
+    "id": "20224f63007d7f78c28e608ac2a4b009",
     "days": 5,
     "location": "Bariloche, Argentina",
     "address": "Lago Nahuel Huapi, Bariloche",
@@ -295,207 +299,6 @@ module.exports = { paquetes: [
     ],
     "actividades": [
       {
-        "id": "ZWJkOWQ2Yi1lYWQ1LTQyYzAtY",
-        "name": "Safari en la Sabana",
-        "description": "Explora la sabana y observa la vida salvaje en su hábitat natural. Una experiencia única e inolvidable.",
-        "main_image": "https://viajesportanzania.com/wp-content/uploads/viaje-a-tanzania-safari-gran-sabana-africana-001.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete3-1/800/400",
-          "https://picsum.photos/seed/paquete3-2/800/400",
-          "https://picsum.photos/seed/paquete3-3/800/400"
-        ],
-        "start_date": "2024-08-20",
-        "duration": "10 días",
-        "place": "Serengeti, Tanzania",
-        "inicio": "Arusha",
-        "duracion": "9 horas",
-        "price": 750,
-        "children_price": 420,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "AtYWY2Yi1mMjg0N2RhOTFiYWYiLCJlbWFpbCI",
-        "name": "Tour por Ciudades Europeas",
-        "description": "Descubre las ciudades más icónicas de Europa, su arquitectura, cultura y gastronomía.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1014/01J44R4ZPV0P3B2T1NQNHCMKSD.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete4-1/800/400",
-          "https://picsum.photos/seed/paquete4-2/800/400",
-          "https://picsum.photos/seed/paquete4-3/800/400"
-        ],
-        "start_date": "2024-09-05",
-        "duration": "15 días",
-        "place": "Europa Occidental",
-        "inicio": "Madrid",
-        "duracion": "6 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Familiar"
-      },
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Relax en las Cataratas del Iguazú",
-    "pasajeros": {
-      "adultos": 1,
-      "ninos": 0
-    },
-    "precio": 2450,
-    "short_description": "<p>Tour de relax en Iguazú con acceso a las cataratas y paseos en bote.</p>",
-    "description": "<p>Conoce una de las maravillas naturales del mundo en un tour de relajación en Iguazú. Con acceso a las cataratas y paseos en bote. Ideal para quienes buscan disfrutar de la naturaleza en su máxima expresión.</p>",
-    "include": "<p>Entrada al parque, paseo en bote por el río Iguazú, alojamiento en hotel, desayuno.</p>",
-    "not_include": "<p>Transporte hasta Iguazú, propinas, comidas no especificadas.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=9",
-    "id": "9119ce827e444e8ecdef34354d112c92",
-    "days": 3,
-    "location": "Puerto Iguazú, Argentina",
-    "address": "Parque Nacional Iguazú",
-    "gallery": [
-      "https://picsum.photos/800/600?random=10",
-      "https://picsum.photos/800/600?random=11",
-      "https://picsum.photos/800/600?random=12"
-    ],
-    "actividades": [
-      {
-        "id": "ZWJkOWQ2Yi1lYWQ1LTQyYzAtY",
-        "name": "Safari en la Sabana",
-        "description": "Explora la sabana y observa la vida salvaje en su hábitat natural. Una experiencia única e inolvidable.",
-        "main_image": "https://viajesportanzania.com/wp-content/uploads/viaje-a-tanzania-safari-gran-sabana-africana-001.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete3-1/800/400",
-          "https://picsum.photos/seed/paquete3-2/800/400",
-          "https://picsum.photos/seed/paquete3-3/800/400"
-        ],
-        "start_date": "2024-08-20",
-        "duration": "10 días",
-        "place": "Serengeti, Tanzania",
-        "inicio": "Arusha",
-        "duracion": "9 horas",
-        "price": 750,
-        "children_price": 420,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "AtYWY2Yi1mMjg0N2RhOTFiYWYiLCJlbWFpbCI",
-        "name": "Tour por Ciudades Europeas",
-        "description": "Descubre las ciudades más icónicas de Europa, su arquitectura, cultura y gastronomía.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1014/01J44R4ZPV0P3B2T1NQNHCMKSD.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete4-1/800/400",
-          "https://picsum.photos/seed/paquete4-2/800/400",
-          "https://picsum.photos/seed/paquete4-3/800/400"
-        ],
-        "start_date": "2024-09-05",
-        "duration": "15 días",
-        "place": "Europa Occidental",
-        "inicio": "Madrid",
-        "duracion": "6 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Familiar"
-      },
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Paquete personalizado",
-    "pasajeros": {
-      "adultos": 1,
-      "ninos": 0
-    },
-    "precio": 3430,
-    "short_description": "",
-    "description": "",
-    "include": "",
-    "not_include": "",
-    "main_picture": "",
-    "actividades": [
-      {
         "id": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOi",
         "name": "Aventura en la Montaña de colores",
         "description": "Disfruta de un viaje emocionante en las montañas con senderismo y vistas espectaculares.",
@@ -556,26 +359,6 @@ module.exports = { paquetes: [
         "category": "Aventura"
       },
       {
-        "id": "AtYWY2Yi1mMjg0N2RhOTFiYWYiLCJlbWFpbCI",
-        "name": "Tour por Ciudades Europeas",
-        "description": "Descubre las ciudades más icónicas de Europa, su arquitectura, cultura y gastronomía.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1014/01J44R4ZPV0P3B2T1NQNHCMKSD.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete4-1/800/400",
-          "https://picsum.photos/seed/paquete4-2/800/400",
-          "https://picsum.photos/seed/paquete4-3/800/400"
-        ],
-        "start_date": "2024-09-05",
-        "duration": "15 días",
-        "place": "Europa Occidental",
-        "inicio": "Madrid",
-        "duracion": "6 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Familiar"
-      },
-      {
         "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
         "name": "Expedición al Desierto",
         "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
@@ -616,231 +399,32 @@ module.exports = { paquetes: [
         "category": "Aventura"
       }
     ],
-    "emailCliente": "federico@thefuzzyfish.com",
-    "id": "4b59503c867c5ba6d0304366e9efe5e0"
+    "emailCliente": "federico@thefuzzyfish.com"
   },
   {
-    "name": "Paquete personalizado",
-    "pasajeros": {
-      "adultos": 1,
-      "ninos": 0
-    },
-    "precio": 3430,
-    "short_description": "",
-    "description": "",
-    "include": "",
-    "not_include": "",
-    "main_picture": "",
-    "actividades": [
-      {
-        "id": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOi",
-        "name": "Aventura en la Montaña de colores",
-        "description": "Disfruta de un viaje emocionante en las montañas con senderismo y vistas espectaculares.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/934/01J3JRM1RAKS41GZQK81WC682E.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete1-1/800/400",
-          "https://picsum.photos/seed/paquete1-2/800/400",
-          "https://picsum.photos/seed/paquete1-3/800/400"
-        ],
-        "start_date": "2024-06-15",
-        "duration": "5 días",
-        "place": "Los Andes, Argentina",
-        "inicio": "Mendoza",
-        "duracion": "13 horas",
-        "price": 500,
-        "children_price": 400,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "5cCI6IkpXVCJ9.eyJ1aWQiOiJiZWJkOWQ",
-        "name": "Escapada a la Montaña",
-        "description": "Relájate en la playa con arena blanca y mar turquesa, ideal para desconectar y disfrutar del sol.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/975/01J3NNTDMB91F3FR9TNZ4WGJDB.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete2-1/800/400",
-          "https://picsum.photos/seed/paquete2-2/800/400",
-          "https://picsum.photos/seed/paquete2-3/800/400"
-        ],
-        "start_date": "2024-07-10",
-        "duration": "7 días",
-        "place": "Punta Cana, República Dominicana",
-        "inicio": "Punta Cana",
-        "duracion": "8 horas",
-        "price": 480,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Romantico"
-      },
-      {
-        "id": "ZWJkOWQ2Yi1lYWQ1LTQyYzAtY",
-        "name": "Safari en la Sabana",
-        "description": "Explora la sabana y observa la vida salvaje en su hábitat natural. Una experiencia única e inolvidable.",
-        "main_image": "https://viajesportanzania.com/wp-content/uploads/viaje-a-tanzania-safari-gran-sabana-africana-001.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete3-1/800/400",
-          "https://picsum.photos/seed/paquete3-2/800/400",
-          "https://picsum.photos/seed/paquete3-3/800/400"
-        ],
-        "start_date": "2024-08-20",
-        "duration": "10 días",
-        "place": "Serengeti, Tanzania",
-        "inicio": "Arusha",
-        "duracion": "9 horas",
-        "price": 750,
-        "children_price": 420,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "AtYWY2Yi1mMjg0N2RhOTFiYWYiLCJlbWFpbCI",
-        "name": "Tour por Ciudades Europeas",
-        "description": "Descubre las ciudades más icónicas de Europa, su arquitectura, cultura y gastronomía.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1014/01J44R4ZPV0P3B2T1NQNHCMKSD.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete4-1/800/400",
-          "https://picsum.photos/seed/paquete4-2/800/400",
-          "https://picsum.photos/seed/paquete4-3/800/400"
-        ],
-        "start_date": "2024-09-05",
-        "duration": "15 días",
-        "place": "Europa Occidental",
-        "inicio": "Madrid",
-        "duracion": "6 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Familiar"
-      },
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com",
-    "id": "254a5d85567dfcc13fd105af4d58ac44"
-  },
-  {
-    "name": "Relax en las Cataratas del Iguazú con guia local",
+    "name": "Safari en la Patagonia con guías locales",
     "pasajeros": {
       "adultos": 2,
       "ninos": 2
     },
     "precio": 4360,
-    "short_description": "<p>Tour de relax en Iguazú con acceso a las cataratas y paseos en bote.</p>",
-    "description": "<p>Conoce una de las maravillas naturales del mundo en un tour de relajación en Iguazú. Con acceso a las cataratas y paseos en bote. Ideal para quienes buscan disfrutar de la naturaleza en su máxima expresión.</p>",
-    "include": "<p>Entrada al parque, paseo en bote por el río Iguazú, alojamiento en hotel, desayuno.</p>",
-    "not_include": "<p>Transporte hasta Iguazú, propinas, comidas no especificadas.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=9",
-    "id": "e30340452b8e18a6c99ebc85d73f31c9",
-    "days": 3,
-    "location": "Puerto Iguazú, Argentina",
-    "address": "Parque Nacional Iguazú",
-    "gallery": [
-      "https://picsum.photos/800/600?random=10",
-      "https://picsum.photos/800/600?random=11",
-      "https://picsum.photos/800/600?random=12"
-    ],
-    "actividades": [
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Relax en las Cataratas del Iguazú",
-    "pasajeros": {
-      "adultos": 2,
-      "ninos": 1
+    "short_description": "<p>Safari en la Patagonia con avistamiento de fauna y excursiones por glaciares.</p>",
+    "description": "<p>Experimenta la belleza de la Patagonia con un safari por sus parques nacionales. Observa la fauna local, desde guanacos hasta cóndores, y disfruta de caminatas entre glaciares y bosques milenarios.</p>",
+    "include": "<p>Alojamiento en cabañas, excursiones guiadas, entrada a parques nacionales, equipo de trekking.</p>",
+    "not_include": "<p>Seguro de viaje, propinas, comidas no especificadas, gastos personales.</p>",
+    "main_picture": "https://picsum.photos/800/600?random=13",
+    "cliente": {
+      "name": "Damian Girardi",
+      "email": "federico@thefuzzyfish.com"
     },
-    "precio": 3380,
-    "short_description": "<p>Tour de relax en Iguazú con acceso a las cataratas y paseos en bote.</p>",
-    "description": "<p>Conoce una de las maravillas naturales del mundo en un tour de relajación en Iguazú. Con acceso a las cataratas y paseos en bote. Ideal para quienes buscan disfrutar de la naturaleza en su máxima expresión.</p>",
-    "include": "<p>Entrada al parque, paseo en bote por el río Iguazú, alojamiento en hotel, desayuno.</p>",
-    "not_include": "<p>Transporte hasta Iguazú, propinas, comidas no especificadas.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=9",
-    "id": "a9cbbfb529d6a9cbebf0a92e71c7b23f",
-    "days": 3,
-    "location": "Puerto Iguazú, Argentina",
-    "address": "Parque Nacional Iguazú",
+    "id": "966bf9ddeb8105b455e3594f7e071e09",
+    "days": 7,
+    "location": "El Calafate, Argentina",
+    "address": "Parque Nacional Los Glaciares",
     "gallery": [
-      "https://picsum.photos/800/600?random=10",
-      "https://picsum.photos/800/600?random=11",
-      "https://picsum.photos/800/600?random=12"
+      "https://picsum.photos/800/600?random=14",
+      "https://picsum.photos/800/600?random=15",
+      "https://picsum.photos/800/600?random=16"
     ],
     "actividades": [
       {
@@ -889,16 +473,20 @@ module.exports = { paquetes: [
   {
     "name": "Escapada Cultural a Buenos Aires",
     "pasajeros": {
-      "adultos": 2,
-      "ninos": 1
+      "adultos": 1,
+      "ninos": 0
     },
-    "precio": 3380,
+    "precio": 3130,
     "short_description": "<p>Tour cultural en Buenos Aires con clases de tango y degustación de comidas típicas.</p>",
     "description": "<p>Sumérgete en la vibrante cultura de Buenos Aires. Visitas a museos, clases de tango y recorridos gastronómicos. Una experiencia completa para conocer la historia y tradiciones porteñas.</p>",
     "include": "<p>Traslados, clases de tango, recorrido gastronómico, entradas a museos.</p>",
     "not_include": "<p>Propinas, bebidas, comidas no especificadas, gastos personales.</p>",
     "main_picture": "https://picsum.photos/800/600?random=17",
-    "id": "b95a0d2b187ec2e48601ed43c44bdf91",
+    "cliente": {
+      "name": "Celina Parodi",
+      "email": "federico@thefuzzyfish.com"
+    },
+    "id": "c6a0192b2643a4d92af75e7ee3d2300d",
     "days": 3,
     "location": "Buenos Aires, Argentina",
     "address": "Barrio de San Telmo, Buenos Aires",
@@ -909,22 +497,42 @@ module.exports = { paquetes: [
     ],
     "actividades": [
       {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
+        "id": "5cCI6IkpXVCJ9.eyJ1aWQiOiJiZWJkOWQ",
+        "name": "Escapada a la Montaña",
+        "description": "Relájate en la playa con arena blanca y mar turquesa, ideal para desconectar y disfrutar del sol.",
+        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/975/01J3NNTDMB91F3FR9TNZ4WGJDB.jpg",
         "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
+          "https://picsum.photos/seed/paquete2-1/800/400",
+          "https://picsum.photos/seed/paquete2-2/800/400",
+          "https://picsum.photos/seed/paquete2-3/800/400"
         ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
+        "start_date": "2024-07-10",
+        "duration": "7 días",
+        "place": "Punta Cana, República Dominicana",
+        "inicio": "Punta Cana",
+        "duracion": "8 horas",
+        "price": 480,
         "children_price": 380,
+        "service": "Servicio privado",
+        "category": "Romantico"
+      },
+      {
+        "id": "ZWJkOWQ2Yi1lYWQ1LTQyYzAtY",
+        "name": "Safari en la Sabana",
+        "description": "Explora la sabana y observa la vida salvaje en su hábitat natural. Una experiencia única e inolvidable.",
+        "main_image": "https://viajesportanzania.com/wp-content/uploads/viaje-a-tanzania-safari-gran-sabana-africana-001.jpg",
+        "gallery": [
+          "https://picsum.photos/seed/paquete3-1/800/400",
+          "https://picsum.photos/seed/paquete3-2/800/400",
+          "https://picsum.photos/seed/paquete3-3/800/400"
+        ],
+        "start_date": "2024-08-20",
+        "duration": "10 días",
+        "place": "Serengeti, Tanzania",
+        "inicio": "Arusha",
+        "duracion": "9 horas",
+        "price": 750,
+        "children_price": 420,
         "service": "Servicio privado",
         "category": "Aventura"
       },
@@ -947,209 +555,26 @@ module.exports = { paquetes: [
         "children_price": 600,
         "service": "Tour grupal",
         "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Safari en la Patagonia",
-    "pasajeros": {
-      "adultos": 2,
-      "ninos": 2
-    },
-    "precio": 4360,
-    "short_description": "<p>Safari en la Patagonia con avistamiento de fauna y excursiones por glaciares.</p>",
-    "description": "<p>Experimenta la belleza de la Patagonia con un safari por sus parques nacionales. Observa la fauna local, desde guanacos hasta cóndores, y disfruta de caminatas entre glaciares y bosques milenarios.</p>",
-    "include": "<p>Alojamiento en cabañas, excursiones guiadas, entrada a parques nacionales, equipo de trekking.</p>",
-    "not_include": "<p>Seguro de viaje, propinas, comidas no especificadas, gastos personales.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=13",
-    "id": "70cff57a4c862dec46fb41e04b441597",
-    "days": 7,
-    "location": "El Calafate, Argentina",
-    "address": "Parque Nacional Los Glaciares",
-    "gallery": [
-      "https://picsum.photos/800/600?random=14",
-      "https://picsum.photos/800/600?random=15",
-      "https://picsum.photos/800/600?random=16"
-    ],
-    "actividades": [
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
       },
       {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
+        "id": "K3QjvP4Qy3l4z1B5A8g5",
+        "name": "Descubre el Tíbet",
+        "description": "Un viaje espiritual y cultural al corazón del Tíbet, sus monasterios y montañas.",
+        "main_image": "https://picsum.photos/seed/paquete7/800/400",
         "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
+          "https://picsum.photos/seed/paquete7-1/800/400",
+          "https://picsum.photos/seed/paquete7-2/800/400",
+          "https://picsum.photos/seed/paquete7-3/800/400"
         ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Relax en las Cataratas del Iguazú",
-    "pasajeros": {
-      "adultos": 2,
-      "ninos": 1
-    },
-    "precio": 3380,
-    "short_description": "<p>Tour de relax en Iguazú con acceso a las cataratas y paseos en bote.</p>",
-    "description": "<p>Conoce una de las maravillas naturales del mundo en un tour de relajación en Iguazú. Con acceso a las cataratas y paseos en bote. Ideal para quienes buscan disfrutar de la naturaleza en su máxima expresión.</p>",
-    "include": "<p>Entrada al parque, paseo en bote por el río Iguazú, alojamiento en hotel, desayuno.</p>",
-    "not_include": "<p>Transporte hasta Iguazú, propinas, comidas no especificadas.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=9",
-    "cliente": {
-      "name": "Fede",
-      "email": "federico@thefuzzyfish.com"
-    },
-    "id": "d79e69bcd0c8ccbcca67a731d60a4b25",
-    "days": 3,
-    "location": "Puerto Iguazú, Argentina",
-    "address": "Parque Nacional Iguazú",
-    "gallery": [
-      "https://picsum.photos/800/600?random=10",
-      "https://picsum.photos/800/600?random=11",
-      "https://picsum.photos/800/600?random=12"
-    ],
-    "actividades": [
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
-      }
-    ],
-    "emailCliente": "federico@thefuzzyfish.com"
-  },
-  {
-    "name": "Safari en la Patagonia",
-    "pasajeros": {
-      "adultos": 1,
-      "ninos": 0
-    },
-    "precio": 1200,
-    "short_description": "<p>Safari en la Patagonia con avistamiento de fauna y excursiones por glaciares.</p>",
-    "description": "<p>Experimenta la belleza de la Patagonia con un safari por sus parques nacionales. Observa la fauna local, desde guanacos hasta cóndores, y disfruta de caminatas entre glaciares y bosques milenarios.</p>",
-    "include": "<p>Alojamiento en cabañas, excursiones guiadas, entrada a parques nacionales, equipo de trekking.</p>",
-    "not_include": "<p>Seguro de viaje, propinas, comidas no especificadas, gastos personales.</p>",
-    "main_picture": "https://picsum.photos/800/600?random=13",
-    "cliente": {
-      "name": "Fede",
-      "email": "federico@thefuzzyfish.com"
-    },
-    "id": "7f6e125c8b6129faed7a80b5fa0a9420",
-    "days": 7,
-    "location": "El Calafate, Argentina",
-    "address": "Parque Nacional Los Glaciares",
-    "gallery": [
-      "https://picsum.photos/800/600?random=14",
-      "https://picsum.photos/800/600?random=15",
-      "https://picsum.photos/800/600?random=16"
-    ],
-    "actividades": [
-      {
-        "id": "iLCJpYXQiOjE3MzA0MDE4NzMsImV4cCI6MTczMD",
-        "name": "Expedición al Desierto",
-        "description": "Una aventura en el desierto con recorridos en camello, noches bajo las estrellas y más.",
-        "main_image": "https://guruexplorers.sfo3.digitaloceanspaces.com/content/1013/01J43PZ5D7DM8XNFRRKA0W63TG.jpg",
-        "gallery": [
-          "https://picsum.photos/seed/paquete5-1/800/400",
-          "https://picsum.photos/seed/paquete5-2/800/400",
-          "https://picsum.photos/seed/paquete5-3/800/400"
-        ],
-        "start_date": "2024-10-10",
-        "duration": "6 días",
-        "place": "Desierto del Sahara, Marruecos",
-        "inicio": "Marrakech",
-        "duracion": "12 horas",
-        "price": 500,
-        "children_price": 380,
-        "service": "Servicio privado",
-        "category": "Aventura"
-      },
-      {
-        "id": "LXKlgNri4cP01NYKn54j",
-        "name": "Escapada a la Selva Amazónica",
-        "description": "Explora la selva y aprende sobre su flora y fauna únicas en un entorno natural.",
-        "main_image": "https://picsum.photos/seed/paquete6/800/400",
-        "gallery": [
-          "https://picsum.photos/seed/paquete6-1/800/400",
-          "https://picsum.photos/seed/paquete6-2/800/400",
-          "https://picsum.photos/seed/paquete6-3/800/400"
-        ],
-        "start_date": "2024-11-01",
-        "duration": "4 días",
-        "place": "Amazonas, Brasil",
-        "inicio": "Manaos",
-        "duracion": "7 horas",
-        "price": 700,
-        "children_price": 600,
-        "service": "Tour grupal",
-        "category": "Aventura"
+        "start_date": "2024-09-15",
+        "duration": "10 días",
+        "place": "Tíbet, China",
+        "inicio": "Lhasa",
+        "duracion": "10 horas",
+        "price": 1200,
+        "children_price": 1100,
+        "service": "Servicio premium",
+        "category": "Cultural"
       }
     ],
     "emailCliente": "federico@thefuzzyfish.com"
