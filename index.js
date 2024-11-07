@@ -25,8 +25,16 @@ const wait = (ms) => {
 
 const startPuppetteer = async () => {
     return await puppeteer.launch({
-        headless: "new",
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        headless: true,
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-gpu',
+            '--no-first-run',
+            '--no-zygote',
+            '--single-process' // Agregar esto puede ayudar en entornos limitados
+        ]
     });
 };
 
